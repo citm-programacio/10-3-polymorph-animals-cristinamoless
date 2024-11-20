@@ -34,14 +34,14 @@ public:
 int main()
 {
     animal an;
-    dog gos;
     cat gat;
+    animal* gos = new dog;
     
     an.speak();
     an.eat();
-    gos.speak();
-    gos.eat();
+    gos->speak();
+    gos->eat();
     gat.speak();
     gat.eat();
-    
+    delete gos;
 }
